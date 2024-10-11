@@ -1,0 +1,259 @@
+﻿<style type="text/css">
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .header {
+        background-color: #007bff;
+        color: white;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .main-content {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .left-section, .right-section {
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .left-section {
+        width: 65%;
+        margin-right: 10px;
+    }
+
+    .right-section {
+        width: 30%;
+    }
+
+    h2 {
+        color: #007bff;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .shipping-option, .payment-options {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: normal;
+        margin-left: 10px;
+    }
+
+    input[type="radio"] {
+        margin-right: 10px;
+    }
+
+    .promotion {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .promotion-card {
+        width: 30%;
+        background-color: #f1f1f1;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+
+    button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;
+    }
+
+        button:hover {
+            background-color: #0056b3;
+    }
+
+</style>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        <div class="container">
+            <div class="header">
+                <h1>Thanh toán</h1>
+            </div>
+
+            <div class="main-content">
+                <div class="left-section">
+                    
+                    <h2>Chọn hình thức giao hàng</h2>
+                    <div class="shipping-option">
+                        <input type="radio" id="tiet-kiem" name="shipping" checked />
+                        <label for="tiet-kiem">Giao tiết kiệm - 30k</label>
+                        <p>Giao trước 19h, 26/10</p>
+                        <p>Điện thoại Samsung Galaxy A54 5G (8GB/128GB)</p>
+                        <p>8,480,000đ</p>
+                    </div>
+
+                    
+                    <h2>Chọn hình thức thanh toán</h2>
+                    <div class="payment-options">
+                        <input type="radio" id="cash" name="payment" checked />
+                        <label for="cash">Thanh toán tiền mặt khi nhận hàng</label><br>
+
+                        <input type="radio" id="viettel" name="payment" />
+                        <label for="viettel">Thanh toán ví Viettel Money</label><br>
+
+                        <input type="radio" id="momo" name="payment" />
+                        <label for="momo">Thanh toán bằng ví MoMo</label><br>
+
+                        <input type="radio" id="zalopay" name="payment" />
+                        <label for="zalopay">Thanh toán bằng ví ZaloPay</label><br>
+
+                        <input type="radio" id="vnpay" name="payment" />
+                        <label for="vnpay">Thanh toán bằng VNPAY</label><br>
+
+                        <input type="radio" id="visa" name="payment" />
+                        <label for="visa">Thanh toán bằng thẻ quốc tế Visa, Master, JCB</label>
+                    </div>
+
+                    
+                    <div class="title">Ưu đãi thanh toán thẻ</div>
+
+                    <button class="add-card-btn">+ Thêm thẻ mới</button>
+
+                    <div class="offers-grid">
+                        <div class="offer-card">
+                            <h3>Freeship</h3>
+                            <p>Thẻ Shinhan Platinum</p>
+                            <p>Không giới hạn</p>
+                            <div class="offer-radio">
+                                <input type="radio" name="offer" id="offer1">
+                                <label for="offer1">Chọn</label>
+                            </div>
+                        </div>
+
+                        <div class="offer-card">
+                            <h3>Giảm 50k</h3>
+                            <p>Đơn từ 300k</p>
+                            <p>Không giới hạn</p>
+                            <div class="offer-radio">
+                                <input type="radio" name="offer" id="offer2">
+                                <label for="offer2">Chọn</label>
+                            </div>
+                        </div>
+
+                        <div class="offer-card">
+                            <h3>Giảm 150k</h3>
+                            <p>Đơn từ 1 triệu</p>
+                            <p>Không giới hạn</p>
+                            <div class="offer-radio">
+                                <input type="radio" name="offer" id="offer3">
+                                <label for="offer3">Chọn</label>
+                            </div>
+                        </div>
+
+                        <div class="offer-card">
+                            <h3>Giảm 70k</h3>
+                            <p>Đơn từ 500k</p>
+                            <p>Không giới hạn</p>
+                            <div class="offer-radio">
+                                <input type="radio" name="offer" id="offer4">
+                                <label for="offer4">Chọn</label>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="atm-option">
+                        <img src="https://via.placeholder.com/24" alt="ATM">
+                        <p>Thẻ ATM nội địa/Internet Banking (Hỗ trợ Internet Banking)</p>
+                    </div>
+                    
+                </div>
+                    </div>
+
+                    <div class="order-summary">
+                        
+                        <div class="delivery-info">
+                            <h3>Giao tới <a href="#">Thay đổi</a></h3>
+                            <p>Quoc Tran Bao | 0328370905</p>
+                            <p>Nhà: 52 Trần Hưng Đạo, Phường 04, Quận 5, Hồ Chí Minh</p>
+                        </div>
+
+                        
+                        <div class="promotion-section">
+                            <h4>Tiki Khuyến Mãi <span>Có thể chọn 2</span></h4>
+                            <div class="promotion">
+                                <img src="~/Content/images/images.png" />
+                                <span>Giảm 50K</span>
+                                <button>Áp Dụng</button>
+                            </div>
+                            <a href="#">Chọn hoặc nhập Khuyến mãi khác</a>
+                        </div>
+
+                        
+                        <div class="asa-discount">
+                            <h4>Thử ngay: Giảm giá cho đơn hàng bằng ASA</h4>
+                            <label>
+                                <input type="checkbox" disabled> Chưa áp dụng giảm giá
+                                <span>(Vì chưa đạt đủ số lượng ASA)</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" disabled> Chưa áp dụng giảm giá
+                                <span>(Vì sở hữu chưa đủ tối thiểu 1000 Xu)</span>
+                            </label>
+                        </div>
+
+                        
+                        <div class="invoice-request">
+                            <label>
+                                <input type="checkbox"> Yêu cầu hóa đơn
+                            </label>
+                            <p>Tiki Trading chỉ xuất hóa đơn điện tử</p>
+                        </div>
+
+                        
+                        <div class="order-details">
+                            <h4>Đơn hàng <a href="#">Thay đổi</a></h4>
+                            <p>1 sản phẩm - <a href="#">Xem thông tin</a></p>
+                            <div class="order-pricing">
+                                <p>Tạm tính: <span>8.480.000đ</span></p>
+                                <p>Phí vận chuyển: <span>42.000đ</span></p>
+                                <p>Khuyến mãi vận chuyển: <span>-30.000đ</span></p>
+                            </div>
+                            <div class="order-total">
+                                <p>Tổng tiền: <span class="total-amount">8.492.000đ</span></p>
+                                <p class="freeship">FREESHIP đã được áp dụng!</p>
+                                <button>Đặt hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div>
+            @RenderBody()
+        </div>
+    
+    
+</body>
+</html>
